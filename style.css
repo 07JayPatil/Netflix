@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 110%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://analyticsindiamag.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg);
+    background-size: cover;
+}
+
+#main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 0, 0, 0.5);
+    /* Adjust the opacity to make it darker */
+    position: fixed;
+}
+
+#main>* {
+    position: relative;
+
+}
+
+#netflix {
+    width: 100%;
+    height: 40%;
+    padding: 20px 60px;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#netflix-part1 {
+    width: 140px;
+    height: 38px;
+    margin-left: 40px;
+    background-image: url(https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460);
+    background-position: center;
+    background-size: cover;
+}
+
+#netflix-part2 {
+    width: 30%;
+    height: 25%;
+    display: flex;
+}
+
+.language-bar {
+    background-color: black;
+    /* Change background color to black */
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+#language-select {
+    color: white;
+    /* Change text color to white */
+    background-color: black;
+    /* Change dropdown background color to black */
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+#language-select:hover {
+    background-color: rgb(60, 59, 59);
+}
+
+#netflix-part2>button {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#netflix-part2>button:hover {
+    background-color: rgb(245, 127, 127);
+}
+
+#about {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+#about1 {
+    color: white;
+}
+
+#about1>h1 {
+
+    padding: 0px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -3px;
+    font-size: 37px;
+
+}
+
+#about1>h2 {
+  
+  padding-left: 11px;
+    font-size: 42px;
+    letter-spacing: -4px;
+    font-size: 37px;
+}
+
+#about1>h4 {
+    font-size: 12px;
+    margin-left: 23%;
+    margin-top: 3px;
+    letter-spacing: -0.5px;
+}
+
+#about2 {
+    width: 100%;
+    height: 17%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about2>p {
+    font-size: 10px;
+}
+
+#mail {
+    margin-top: 8px;
+    height: 150px;
+}
+
+#mail input {
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+#mail input::placeholder {
+    padding: 0px 2px;
+    color: black;
+    background-color: white;
+    bottom: 10px;
+}
+
+#mail>button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mail>button:hover {
+    background-color: rgb(245, 127, 127);
+}
+
+#hero {
+    background: linear-gradient(to bottom, rgb(1, 1, 32), black);
+    width: 100%;
+    height: 67%;
+}
+
+#hero>h4 {
+    padding-top: 8px;
+    color: white;
+    margin-left: 100px;
+}
+
+#img-container {
+    margin-top: 13px;
+    margin-left: 100px;
+
+}
+
+#img-container img {
+    height: 200px;
+    width: 140px;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#img-container img:hover {
+    transform: scale(1.1);
+}
+
+#hero>button {
+    color: white;
+    background-color: rgb(35, 33, 33);
+    border: 1px solid black;
+    height: 70px;
+    width: 20px;
+    border-radius: 50px;
+    margin-left: 785px;
+    position: absolute;
+    top: 41%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#hero>button:hover {
+    background-color: rgb(60, 59, 59);
+}
+
+#villain {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 67%;
+}
+
+#villain>h4 {
+    padding-top: 1px;
+    color: white;
+    margin-left: 100px;
+}
+
+#vill {
+    padding: 0px 55px;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+.vill1 {
+    margin-left: 26px;
+    width: 140px;
+    height: 200px;
+    padding: 20px 15px;
+    background: linear-gradient(to bottom, rgb(15, 1, 43), rgb(31, 1, 40));
+    /* Example gradient */
+    border-radius: 10px;
+}
+
+.vill1>h4 {
+    font-size: 15px;
+}
+
+.vill1>p {
+    font-size: 9px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.vill2,
+.vill3,
+.vill4 {
+    width: 140px;
+    height: 200px;
+    padding: 20px 15px;
+    background: linear-gradient(to bottom, rgb(15, 1, 43), rgb(31, 1, 40));
+    /* Example gradient */
+    border-radius: 10px;
+}
+
+.vill2>h4 {
+    font-size: 15px;
+}
+
+.vill2>p {
+    font-size: 9px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.vill3>h4 {
+    font-size: 15px;
+}
+
+.vill3>p {
+    font-size: 9px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.vill4>h4 {
+    font-size: 15px;
+}
+
+.vill4>p {
+    font-size: 9px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+#ex {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+}
+
+#ex>h4 {
+    padding-top: 1px;
+    color: white;
+    margin-left: 100px;
+}
+
+#ex-part {
+    height: 90%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+}
+
+.ex-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensure space between text and icon */
+    margin-left: 27px;
+    margin-bottom: 5px;
+    width: 79%;
+    padding: 15px 10px;
+    background-color: rgb(41, 41, 40);
+    cursor: pointer;
+}
+
+.ex-part1:hover {
+    background-color: rgb(58, 56, 56);
+}
+
+.ex-part1:nth-child(2) {
+    background-color: rgb(41, 41, 40);
+}
+
+.ex-part1:nth-child(2):hover {
+    background-color: rgb(58, 56, 56);
+}
+
+.ex-part1:nth-child(3) {
+    background-color: rgb(41, 41, 40);
+}
+
+.ex-part1:nth-child(3):hover {
+    background-color: rgb(58, 56, 56);
+}
+
+.ex-part1:nth-child(4) {
+    background-color: rgb(41, 41, 40);
+}
+
+.ex-part1:nth-child(4):hover {
+    background-color: rgb(58, 56, 56);
+}
+
+.ex-part1:nth-child(5) {
+    background-color: rgb(41, 41, 40);
+}
+
+.ex-part1:nth-child(5):hover {
+    background-color: rgb(58, 56, 56);
+}
+
+.ex-part1:nth-child(6) {
+    background-color: rgb(41, 41, 40);
+}
+
+.ex-part1:nth-child(6):hover {
+    background-color: rgb(58, 56, 56);
+}
+
+.ex-part1 h4 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ex-part1>i {
+    font-size: 300px;
+    font-weight: 100;
+}
+
+#jay {
+    width: 100%;
+    height: 24%;
+    background-color: black;
+}
+
+#jay1 {
+    width: 100%;
+    height: 17%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jay1>p {
+    font-size: 10px;
+}
+
+#mail1 {
+    margin-top: 8px;
+    height: 150px;
+}
+
+#mail1 input {
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+#mail1 input::placeholder {
+    padding: 0px 2px;
+    color: black;
+    background-color: white;
+    bottom: 10px;
+}
+
+#mail1>button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mail1>button:hover {
+    background-color: rgb(245, 127, 127);
+}
+
+#dev {
+    width: 100%;
+    height: 35%;
+    color: rgb(172, 169, 169);
+    background-color: black;
+
+}
+
+#dev-part1 {
+    width: 60%;
+    height: 25%;
+    margin-left: 100px;
+    font-size: 10px;
+}
+
+#dev-part {
+    width: 60%;
+    height: 60%;
+    margin-left: 100px;
+    font-size: 10px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.dev-part2>p {
+    height: 25%;
+
+}
+
+#shre {
+    width: 100%;
+    height: 36.3%;
+    background-color: black;
+}
+
+.language-bar1 {
+    width: 9%;
+    background-color: black;
+    /* Change background color to black */
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 100px;
+    border: 1px solid white;
+}
+
+#language-select1 {
+    color: white;
+    /* Change text color to white */
+    background-color: black;
+    /* Change dropdown background color to black */
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+#language-select1:hover {
+    background-color: rgb(60, 59, 59);
+}
+
+#shre>p {
+    color: rgb(172, 169, 169);
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 10px;
+}
